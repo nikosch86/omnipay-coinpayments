@@ -4,6 +4,7 @@ namespace Omnipay\Coinpayments;
 
 use Omnipay\Common\AbstractGateway;
 use Omnipay\Coinpayments\Message\TransactionRequest;
+use Omnipay\Coinpayments\Message\RatesRequest;
 use Omnipay\Coinpayments\Message\PayByNameRequest;
 use Omnipay\Coinpayments\Message\TransferRequest;
 use Omnipay\Coinpayments\Message\WithdrawalRequest;
@@ -42,6 +43,14 @@ class Gateway extends AbstractGateway
     public function setPublicKey($value)
     {
         return $this->setParameter('publicKey', $value);
+    }
+
+    /**
+     * @return RatesRequest
+     */
+    public function rates(array $parameters = array())
+    {
+        return $this->createRequest(RatesRequest::class, $parameters);
     }
 
     /**
