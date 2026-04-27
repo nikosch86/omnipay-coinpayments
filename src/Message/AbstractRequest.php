@@ -80,7 +80,12 @@ abstract class AbstractRequest extends BaseAbstractRequest {
 
     public function getBuyerEmail()
     {
-        return $this->getParameter('buyer_email');
+        $email = $this->getParameter('buyer_email');
+        if ($email) {
+            return $email;
+        }
+        $card = $this->getCard();
+        return $card ? $card->getEmail() : null;
     }
 
     public function setBuyerEmail($value)
@@ -90,7 +95,12 @@ abstract class AbstractRequest extends BaseAbstractRequest {
 
     public function getBuyerName()
     {
-        return $this->getParameter('buyer_name');
+        $name = $this->getParameter('buyer_name');
+        if ($name) {
+            return $name;
+        }
+        $card = $this->getCard();
+        return $card ? $card->getName() : null;
     }
 
     public function setBuyerName($value)

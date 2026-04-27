@@ -21,7 +21,7 @@ class TransactionRequest extends AbstractRequest
             'currency2' => $this->getCurrency2(),
             'address' => $this->getAddress(),
             'buyer_email' => $this->getBuyerEmail(),
-            'buyer_name' => $this->getBuyername(),
+            'buyer_name' => $this->getBuyerName(),
             'item_name' => $this->getItemName(),
             'item_number' => $this->getItemNumber(),
             'invoice' => $this->getInvoice(),
