@@ -28,6 +28,6 @@
     "php-http/guzzle6-adapter": "*"
   },
   "require-dev": {
-    "omnipay/tests": "^3.0"
+    "omnipay/tests": "^4.0"
   }
 }
