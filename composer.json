@@ -1,5 +1,5 @@
 {
-  "name": "inkedcurtis/omnipay-coinpayments",
+  "name": "nikosch86/omnipay-coinpayments",
   "type": "library",
   "description": "Coinpayments driver for the Omnipay payment processing library",
   "keywords": [
@@ -11,7 +11,7 @@
     "pay",
     "payment"
   ],
-  "homepage": "https://github.com/inkedcurtis/omnipay-coinpayments",
+  "homepage": "https://github.com/nikosch86/omnipay-coinpayments",
   "license": "MIT",
   "authors": [
     {
